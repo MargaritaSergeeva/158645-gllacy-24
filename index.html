@@ -5,8 +5,59 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header container">
+      <h1>
+        <span class="visually-hidden">Сайт Gllacy Shop</span>
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип сайта Gllacy Shop">
+        </a>
+      </h1>
+      <nav class="site-navigation">
+        <ul>
+          <li class="catalog-list-item">
+            <a class="catalog-link" href="#">Каталог</a>
+            <div class="wrapper-catalog-nav">
+              <ul class="catalog-navigation pop-up">
+                <li><a class="catalog-nav-item nav-item-new" href="#">Новинки</a></li>
+                <li><a class="catalog-nav-item" href="#">Сливочное</a></li>
+                <li><a class="catalog-nav-item" href="#">Щербеты</a></li>
+                <li><a class="catalog-nav-item" href="#">Фруктовый лед</a></li>
+                <li><a class="catalog-nav-item" href="#">Мелорин</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="delivery-list-item"><a href="#">Доставка и оплата</a></li>
+          <li class="info-list-item"><a href="#">О компании</a></li>
+        </ul>
+      </nav>
+      <nav class="user-navigation">
+        <div class="search">
+          <form class="search-form pop-up" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+            <input class="search-input" id="search" name="search" type="search" placeholder="Что ищем?">
+            <button class="search-btn" type="submit" aria-label="Найти"></button>
+          </form>
+        </div>
+        <ul class="nav-user-block">
+          <li>
+            <a class="login-link" href="#">Вход</a>
+            <form class="login-form pop-up-style" action="https://echo.htmlacademy.ru" method="post">
+              <input name="email" type="email" placeholder="Электронная почта">
+              <input name="password" type="password" placeholder="Пароль">
+              <button class="button" type="submit">Войти</button>
+              <div class="for-enter">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </li>
+          <li><a class="cart" href="#" aria-label="Корзина">Пусто</a></li>
+        </ul>
+      </nav>
+      <div class="extra">
+        <p>С 10 до 20, ежедневно</p>
+        <b>8 812 450-25-25</b>
+      </div>
+    </header>
   </body>
 </html>
