@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Маргарита Сергеева](https://up.htmlacademy.ru/htmlcss/24/user/158645).
-* Наставник: [Александр Игонин](https://htmlacademy.ru/profile/id30996).
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
