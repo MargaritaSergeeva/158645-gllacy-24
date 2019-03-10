@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="site-wrapper">
+    <div class="site-wrapper img-slide-1">
       <header class="main-header container">
         <h1>
           <a class="main-header-logo">
@@ -14,64 +16,68 @@
           </a>
         </h1>
         <nav class="site-navigation">
-          <ul>
-            <li class="catalog-list-item">
+          <ul class="site-nav-list">
+            <li class="site-nav-item catalog-list-item">
               <a class="catalog-link" href="#">Каталог</a>
-              <div class="wrapper-catalog-nav">
-                <ul class="catalog-navigation pop-up">
+              <div class="wrapper-catalog-nav pop-up">
+                <ul class="catalog-navigation">
                   <li><a class="catalog-nav-item nav-item-new" href="#">Новинки</a></li>
-                  <li><a class="catalog-nav-item" href="inner-page.html">Сливочное</a></li>
+                  <li><a class="catalog-nav-item nav-item-cream" href="inner-page.html">Сливочное</a></li>
                   <li><a class="catalog-nav-item" href="#">Щербеты</a></li>
                   <li><a class="catalog-nav-item" href="#">Фруктовый лед</a></li>
-                  <li><a class="catalog-nav-item" href="#">Мелорин</a></li>
+                  <li><a class="catalog-nav-item nav-item-last" href="#">Мелорин</a></li>
                 </ul>
               </div>
             </li>
-            <li class="delivery-list-item"><a href="#">Доставка и оплата</a></li>
-            <li class="info-list-item"><a href="#">О компании</a></li>
+            <li class="site-nav-item delivery-list-item"><a href="#">Доставка и оплата</a></li>
+            <li class="site-nav-item info-list-item"><a href="#">О Компании</a></li>
           </ul>
         </nav>
-        <nav class="user-navigation">
-          <div class="search">
-            <div class="wrapper-search-form pop-up">
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
-                <input class="search-input" id="search" name="search" type="search" placeholder="Что ищем?">
-                <button class="search-btn" type="submit"><span class="visually-hidden">Найти</span></button>
-              </form>
+        <div class="wrapper-user-extra">
+          <nav class="user-navigation">
+            <div class="search" tabindex="0">
+              <div class="wrapper-search-form pop-up">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+                  <input class="search-input" id="search" name="search" type="search" placeholder="Что ищем?">
+                  <button class="search-btn visually-hidden" type="submit">Найти</button>
+                </form>
+              </div>
             </div>
+            <div class="user-block">
+              <ul>
+                <li class="login-list-item">
+                  <a class="login-link" href="login-link.html">Вход</a>
+                  <div class="wrapper-login-form pop-up">
+                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                      <p class="login-form-email">
+                        <label class="visually-hidden" for="email-login">Ваш электронный адрес</label>
+                        <input id="email-login" name="email" type="email" placeholder="Электронная почта">
+                      </p>
+                      <p class="login-form-password">
+                        <label class="visually-hidden" for="password">Ваш пароль</label>
+                        <input id="password" name="password" type="password" placeholder="Пароль">
+                      </p>
+                      <div class="wrapper-btn-enter">
+                        <button class="button" type="submit">Войти</button>
+                        <div class="for-enter">
+                          <a class="forgot-passward" href="#">Забыли пароль?</a>
+                          <a class="new-registration" href="#">Новая регистрация</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+              <ul class="operation-with-goods">
+                <li><a class="cart" href="#"><span class="visually-hidden">Корзина&ensp;</span>Пусто</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="extra">
+            <p>С 10 до 20, ежедневно</p>
+            <a class="contact-number" href="tel:+78124502525">8 812 450-25-25</a>
           </div>
-          <div class="user-block">
-            <ul>
-              <li>
-                <a class="login-link" href="login-link.html">Вход</a>
-                <div class="wrapper-login-form pop-up">
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p class="login-form-email">
-                      <label class="visually-hidden" for="email-login">Ваш электронный адрес</label>
-                      <input id="email-login" name="email" type="email" placeholder="Электронная почта">
-                    </p>
-                    <p class="login-form-password">
-                      <label class="visually-hidden" for="password">Ваш пароль</label>
-                      <input id="password" name="password" type="password" placeholder="Пароль">
-                    </p>
-                    <button class="button" type="submit">Войти</button>
-                    <div class="for-enter">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
-                    </div>
-                  </form>
-                </div>
-              </li>
-            </ul>
-            <ul class="operation-with-goods">
-              <li><a class="cart" href="#"><span class="visually-hidden">Корзина&ensp;</span>Пусто</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="extra">
-          <p>С 10 до 20, ежедневно</p>
-          <a class="contact-number" href="tel:+78124502525">8 812 450-25-25</a>
         </div>
       </header>
       <main>
@@ -79,22 +85,16 @@
           <section class="slider">
             <h2 class="visually-hidden">Промо-слайдер</h2>
             <ul class="slider-list">
-              <li class="slide slide-1">
-                <h3 class="slide-title">
-                  Крем-брюле и пломбир с малиновым джемом
-                </h3>
+              <li class="slide slide-1 pop-up">
+                <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
                 <a class="button slide-button" href="#">Давайте оба!</a>
               </li>
-              <li class="slide slide-2">
-                <h3 class="slide-title">
-                  Шоколадный пломбир и лимонный сорбет
-                </h3>
+              <li class="slide slide-2 pop-up">
+                <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
                 <a class="button slide-button" href="#">Давайте оба!</a>
               </li>
               <li class="slide slide-3">
-                <h3 class="slide-title">
-                  Пломбир с помадкой и клубничный щербет
-                </h3>
+                <h3 class="slide-title">Пломбир с помадкой и&nbsp;клубничный щербет</h3>
                 <a class="button slide-button" href="#">Давайте оба!</a>
               </li>
             </ul>
@@ -194,7 +194,8 @@
               <li class="advantage advantage-natural">Для приготовления мороженого используются настоящие сливки и молоко
                 высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически
                 чистого сырья.</li>
-              <li class="advantage advantage-icebox">Доставка нашего мороженого до заказчиков осуществляется в специальном
+              <li class="advantage advantage-icebox">Доставка нашего мороженого до заказчиков осуществляется в
+                специальном
                 термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
             </ul>
           </section>
@@ -205,7 +206,8 @@
             </article>
             <section class="subscription">
               <h2 class="visually-hidden">Подписка</h2>
-              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+                происходит.
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="email-subscription">Электронная почта</label>
