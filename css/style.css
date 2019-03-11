@@ -818,3 +818,84 @@ input[type="radio"].visually-hidden {
 
   overflow: visible;
 }
+
+.advantages {
+  margin-top: 2px;
+  padding-top: 26px;
+  padding-right: 27px;
+  padding-bottom: 13px;
+  padding-left: 21px;
+
+  background-image: url(../img/wafer.png);
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.advantages h2 {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+
+  color: #323232;
+}
+
+.advantages .advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages .advantage {
+  position: relative;
+
+  width: 540px;
+  margin-bottom: 10px;
+  padding-top: 13px;
+  padding-left: 55px;
+
+  color: #323232;
+}
+
+.advantages .advantage:nth-child(2n-1) {
+  margin-right: auto;
+}
+
+.advantages .advantage:nth-child(2n) {
+  width: 530px;
+}
+
+.advantages .advantage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+
+  width: 49px;
+  height: 49px;
+}
+
+.advantages .advantage-own::before {
+  background-image: url(../img/icon-ice-cream.png);
+}
+
+.advantages .advantage-farmers::before {
+  left: -4px;
+
+  background-image: url(../img/icon-cow.png);
+}
+
+.advantages .advantage-natural::before {
+  background-image: url(../img/icon-leaf.png);
+}
+
+.advantages .advantage-icebox::before {
+  left: -4px;
+
+  background-image: url(../img/thermometer-icon.png);
+}
