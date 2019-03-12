@@ -903,6 +903,7 @@ input[type="radio"].visually-hidden {
 
 .wrapper-news-subs {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .wrapper-news-subs .news {
@@ -936,8 +937,60 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+.news a:hover,
+.news a:focus {
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
+  outline: none;
+}
+
+.news a:active {
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
+}
+
 .wrapper-news-subs .subscription {
   width: 560px;
+  padding-top: 34px;
+  padding-right: 20px;
+  padding-bottom: 33px;
+  padding-left: 26px;
 
   background-image: url("../img/zip-bckground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
 }
+
+.subscription p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.subscription input {
+  width: 368px;
+  margin-right: 8px;
+  padding-top: 13px;
+  padding-right: 15px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+.subscription input::placeholder {
+  color: #999999;
+}
+
+.subscription .button {
+  padding-top: 9px;
+  padding-right: 17px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+}
+
+/* MAP */
+
