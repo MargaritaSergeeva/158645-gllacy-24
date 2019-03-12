@@ -821,6 +821,7 @@ input[type="radio"].visually-hidden {
 
 .advantages {
   margin-top: 2px;
+  margin-bottom: 40px;
   padding-top: 26px;
   padding-right: 27px;
   padding-bottom: 13px;
@@ -898,4 +899,45 @@ input[type="radio"].visually-hidden {
   left: -4px;
 
   background-image: url(../img/thermometer-icon.png);
+}
+
+.wrapper-news-subs {
+  display: flex;
+}
+
+.wrapper-news-subs .news {
+  width: 560px;
+  margin-right: auto;
+  padding-top: 22px;
+  padding-right: 251px;
+  padding-bottom: 81px;
+  padding-left: 20px;
+
+  background-image: url("../img/strawberry-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.news h2 {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.wrapper-news-subs .subscription {
+  width: 560px;
+
+  background-image: url("../img/zip-bckground.png");
 }
