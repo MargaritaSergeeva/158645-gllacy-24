@@ -14,14 +14,14 @@
       <nav class="site-navigation">
         <ul class="site-nav-list">
           <li class="site-nav-item catalog-list-item">
-            <a class="catalog-link" href="#">Каталог</a>
+            <a class="catalog-link site-nav-active" href="#">Каталог</a>
             <div class="wrapper-catalog-nav pop-up">
               <ul class="catalog-navigation">
                 <li><a class="catalog-nav-item nav-item-new" href="#">Новинки</a></li>
-                <li><a class="catalog-nav-item" href="inner-page.html">Сливочное</a></li>
+                <li><a class="catalog-nav-item nav-item-active" href="inner-page.html">Сливочное</a></li>
                 <li><a class="catalog-nav-item" href="#">Щербеты</a></li>
                 <li><a class="catalog-nav-item" href="#">Фруктовый лед</a></li>
-                <li><a class="catalog-nav-item" href="#">Мелорин</a></li>
+                <li><a class="catalog-nav-item nav-item-last" href="#">Мелорин</a></li>
               </ul>
             </div>
           </li>
@@ -42,7 +42,7 @@
           </div>
           <div class="user-block">
             <ul>
-              <li>
+              <li class="login-list-item">
                 <a class="login-link" href="login-link.html">Вход</a>
                 <div class="wrapper-login-form pop-up">
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -54,10 +54,12 @@
                       <label class="visually-hidden" for="password">Ваш пароль</label>
                       <input id="password" name="password" type="password" placeholder="Пароль">
                     </p>
-                    <button class="button" type="submit">Войти</button>
-                    <div class="for-enter">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
+                    <div class="wrapper-btn-enter">
+                      <button class="button" type="submit">Войти</button>
+                      <div class="for-enter">
+                        <a class="forgot-passward" href="#">Забыли пароль?</a>
+                        <a class="new-registration" href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -92,10 +94,10 @@
             </ul>
           </div>
         </nav>
-      </div>
-      <div class="extra">
-        <p>С 10 до 20, ежедневно</p>
-        <a class="contact-number" href="tel:+78124502525">8 812 450-25-25</a>
+        <div class="extra">
+          <p>С 10 до 20, ежедневно</p>
+          <a class="contact-number" href="tel:+78124502525">8 812 450-25-25</a>
+        </div>
       </div>
     </header>
     <main class="container">
