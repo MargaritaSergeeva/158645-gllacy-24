@@ -233,6 +233,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 37px;
   left: -7px;
+  z-index: 1;
 
   width: 143px;
 
@@ -1546,10 +1547,62 @@ input[type="radio"].visually-hidden {
 
 
 /* INNER PAGE */
+.main-inner {
+  margin-top: -18px;
+}
 
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
 
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  list-style: none;
+}
 
+.breadcrumbs .breadcrumbs-item {
+  position: relative;
+  padding-right: 21px;
+}
 
+.breadcrumbs .breadcrumbs-item:last-child {
+  padding-right: 0;
+}
 
+.breadcrumbs .breadcrumbs-item::after {
+  content: "»";
+  position: absolute;
+  right: 6px;
+}
 
+.breadcrumbs .breadcrumbs-item:last-child::after {
+  content: "";
+}
+
+.breadcrumbs a {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+
+  outline: none;
+}
+
+.main-inner h1 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  word-spacing: 1.5px;
+}
 
