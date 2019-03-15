@@ -113,18 +113,19 @@
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-sort">
             <label for="sort">Сортировка:</label>
-            <select id="sort" name="sort">
+            <select class="sort-select" id="sort" name="sort">
               <option value="popular" selected>по популярности</option>
               <option value="low-price">сначала недорогие</option>
               <option value="high-price">сначала дорогие</option>
               <option value="fat">по жирности</option>
             </select>
+            <div class="custom-select-arrow"></div>
           </div>
           <div class="filter-price">
             <h2>Цена:</h2>
             <label class="visually-hidden" for="price-min">Цена от</label>
             <input id="price-min" name="price-min" type="text" value="100">
-            <span>руб.&mdash;</span>
+            <span>руб.&ndash;</span>
             <label class="visually-hidden" for="price-max">Цена до</label>
             <input id="price-max" name="price-max" type="text" value="500">
             <span>руб.</span>
@@ -139,29 +140,29 @@
           <fieldset class="filter-fat">
             <legend>Жирность:</legend>
             <div class="wrapper-filter-fat">
-              <input class="fat" id="no-fat" name="fat" type="radio" value="0%-fat">
+              <input class="fat visually-hidden" id="no-fat" name="fat" type="radio" value="0%-fat">
               <label for="no-fat">0%</label>
-              <input class="fat" id="ten-fat" name="fat" type="radio" value="10%-fat" checked>
+              <input class="fat visually-hidden" id="ten-fat" name="fat" type="radio" value="10%-fat" checked>
               <label for="ten-fat">до 10%</label>
-              <input class="fat" id="thirty-fat" name="fat" type="radio" value="30%-fat">
+              <input class="fat visually-hidden" id="thirty-fat" name="fat" type="radio" value="30%-fat">
               <label for="thirty-fat">до 30%</label>
-              <input class="fat" id="thirty-more-fat" name="fat" type="radio" value="30%-more-fat">
+              <input class="fat visually-hidden" id="thirty-more-fat" name="fat" type="radio" value="30%-more-fat">
               <label for="thirty-more-fat">выше 30%</label>
             </div>
           </fieldset>
           <fieldset class="filter-fillers">
             <legend>Наполнители:</legend>
             <div class="wrapper-filter-fillers">
-              <input id="chocolate" name="chocolate" type="checkbox" checked>
-              <label for="chocolate">шоколадные</label>
-              <input id="sugar" name="sugar" type="checkbox" checked>
-              <label for="sugar">сахарные присыпки</label>
-              <input id="fruit" name="fruit" type="checkbox">
-              <label for="fruit">фрукты</label>
-              <input id="syrup" name="syrup" type="checkbox">
-              <label for="syrup">сиропы</label>
-              <input id="jam" name="jam" type="checkbox">
-              <label for="jam">джемы</label>
+              <input class="fill visually-hidden" id="chocolate" name="chocolate" type="checkbox" checked>
+              <label class="fill-chocolate" for="chocolate">шоколадные</label>
+              <input class="fill visually-hidden" id="sugar" name="sugar" type="checkbox" checked>
+              <label class="fill-sugar" for="sugar">сахарные присыпки</label>
+              <input class="fill visually-hidden" id="fruit" name="fruit" type="checkbox">
+              <label class="fill-fruit" for="fruit">фрукты</label>
+              <input class="fill visually-hidden" id="syrup" name="syrup" type="checkbox">
+              <label class="fill-syrup" for="syrup">сиропы</label>
+              <input class="fill visually-hidden" id="jam" name="jam" type="checkbox">
+              <label class="fill-jam" for="jam">джемы</label>
             </div>
           </fieldset>
           <button class="filter-btn" type="submit">Применить</button>
@@ -170,7 +171,7 @@
       <section class="goods">
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
         <article class="goods-item">
-          <a href="#">
+          <a class="item-image-link" href="#">
             <img class="item-image" src="img/orange-ice-cream.png" width="267" height="267" alt="Бело-оранжевое мороженое">
           </a>
           <div class="wrapper-item-price">
