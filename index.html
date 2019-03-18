@@ -6,7 +6,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="index-body">
     <div class="site-wrapper img-slide-1">
       <header class="main-header container">
         <h1>
@@ -218,6 +218,7 @@
         <section class="location">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="map-image">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCaMMLOk" width="1200" height="430" frameborder="1" allowfullscreen="true"></iframe>
             <img src="img/map.png" width="1200" height="430" alt="Офис компании по адресу г. Санкт-Петербург ул.Большая Конюшенная д.19/18">
           </div>
           <div class="contacts">
@@ -230,7 +231,7 @@
               <a class="contact-number" href="tel:+78124502525">8 812 450-25-25</a>
               (с 10 до 20 ежедневно)
             </p>
-            <a class="button" href="#">Форма обратной связи</a>
+            <a class="button feedback" href="#">Форма обратной связи</a>
             <div class="overlay-contact-form pop-up">
               <form class="modal-contact-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="contact-form-phrase">Мы обязательно вам ответим!</p>
@@ -325,7 +326,9 @@
         </section>
         <div class="footer-copyright">
           <p>
-            <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+            </a>
             <span>Сделано в
             <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             &copy; 2019</span>
@@ -333,5 +336,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
