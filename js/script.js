@@ -1,4 +1,3 @@
-
 var body = document.querySelector(".index-body");
 var sliderBackground = document.querySelector(".site-wrapper");
 var slider = document.querySelector(".slider");
@@ -8,54 +7,6 @@ var slide3 = slider.querySelector(".slide-3");
 var slideBtn1 = slider.querySelector(".slide-btn-1");
 var slideBtn2 = slider.querySelector(".slide-btn-2");
 var slideBtn3 = slider.querySelector(".slide-btn-3");
-
-
-// Slider
-slideBtn1.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  body.classList.remove("background-slide-2");
-  body.classList.remove("background-slide-3");
-  sliderBackground.classList.add("img-slide-1");
-  sliderBackground.classList.remove("img-slide-2");
-  sliderBackground.classList.remove("img-slide-3");
-  slide1.classList.remove("pop-up");
-  slide2.classList.add("pop-up");
-  slide3.classList.add("pop-up");
-  slideBtn1.classList.add("slide-btn-chacked");
-  slideBtn2.classList.remove("slide-btn-chacked");
-  slideBtn3.classList.remove("slide-btn-chacked");
-});
-
-slideBtn2.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  body.classList.add("background-slide-2");
-  body.classList.remove("background-slide-3");
-  sliderBackground.classList.remove("img-slide-1");
-  sliderBackground.classList.add("img-slide-2");
-  sliderBackground.classList.remove("img-slide-3");
-  slide1.classList.add("pop-up");
-  slide2.classList.remove("pop-up");
-  slide3.classList.add("pop-up");
-  slideBtn1.classList.remove("slide-btn-chacked");
-  slideBtn2.classList.add("slide-btn-chacked");
-  slideBtn3.classList.remove("slide-btn-chacked");
-});
-
-slideBtn3.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  body.classList.remove("background-slide-2");
-  body.classList.add("background-slide-3");
-  sliderBackground.classList.remove("img-slide-1");
-  sliderBackground.classList.remove("img-slide-2");
-  sliderBackground.classList.add("img-slide-3");
-  slide1.classList.add("pop-up");
-  slide2.classList.add("pop-up");
-  slide3.classList.remove("pop-up");
-  slideBtn1.classList.remove("slide-btn-chacked");
-  slideBtn2.classList.remove("slide-btn-chacked");
-  slideBtn3.classList.add("slide-btn-chacked");
-});
-
 
 var feedback = document.querySelector(".feedback");
 var popupFb = document.querySelector(".overlay-contact-form");
@@ -123,4 +74,50 @@ window.addEventListener("keydown", function (evt) {
       contactForm.classList.remove("modal-form-error");
     }
   }
+});
+
+// Slider
+slideBtn1.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  body.classList.remove("background-slide-2");
+  body.classList.remove("background-slide-3");
+  sliderBackground.classList.add("img-slide-1");
+  sliderBackground.classList.remove("img-slide-2");
+  sliderBackground.classList.remove("img-slide-3");
+  slide1.classList.remove("pop-up");
+  slide2.classList.add("pop-up");
+  slide3.classList.add("pop-up");
+  slideBtn1.classList.add("slide-btn-chacked");
+  slideBtn2.classList.remove("slide-btn-chacked");
+  slideBtn3.classList.remove("slide-btn-chacked");
+});
+
+slideBtn2.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  body.classList.add("background-slide-2");
+  body.classList.remove("background-slide-3");
+  sliderBackground.classList.remove("img-slide-1");
+  sliderBackground.classList.add("img-slide-2");
+  sliderBackground.classList.remove("img-slide-3");
+  slide1.classList.add("pop-up");
+  slide2.classList.remove("pop-up");
+  slide3.classList.add("pop-up");
+  slideBtn1.classList.remove("slide-btn-chacked");
+  slideBtn2.classList.add("slide-btn-chacked");
+  slideBtn3.classList.remove("slide-btn-chacked");
+});
+
+slideBtn3.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  body.classList.remove("background-slide-2");
+  body.classList.add("background-slide-3");
+  sliderBackground.classList.remove("img-slide-1");
+  sliderBackground.classList.remove("img-slide-2");
+  sliderBackground.classList.add("img-slide-3");
+  slide1.classList.add("pop-up");
+  slide2.classList.add("pop-up");
+  slide3.classList.remove("pop-up");
+  slideBtn1.classList.remove("slide-btn-chacked");
+  slideBtn2.classList.remove("slide-btn-chacked");
+  slideBtn3.classList.add("slide-btn-chacked");
 });
