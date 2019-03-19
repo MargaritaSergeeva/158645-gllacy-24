@@ -30,7 +30,7 @@ try {
 feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupFb.classList.add("modal-show");
-  popupFb.classList.add("animation-modal-form");
+  contactForm.classList.add("animation-modal-form");
     if (storageName) {
       userName.value = storageName;
       userEmail.focus();
@@ -50,7 +50,7 @@ feedback.addEventListener("click", function (evt) {
 contactForm.addEventListener("submit", function (evt) {
   if (!userEmail.value || !userName.value || !userMessage.value) {
     evt.preventDefault();
-    popupFb.classList.remove("animation-modal-form");
+    contactForm.classList.remove("animation-modal-form");
     contactForm.classList.remove("modal-form-error");
     popupFb.offsetWidth = popupFb.offsetWidth;
     contactForm.classList.add("modal-form-error");
@@ -64,6 +64,7 @@ closeFb.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupFb.classList.remove("modal-show");
   contactForm.classList.remove("modal-form-error");
+  contactForm.classList.remove("animation-modal-form");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -72,6 +73,7 @@ window.addEventListener("keydown", function (evt) {
     if (popupFb.classList.contains("modal-show")) {
       popupFb.classList.remove("modal-show");
       contactForm.classList.remove("modal-form-error");
+      contactForm.classList.remove("animation-modal-form");
     }
   }
 });
