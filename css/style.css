@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/robotobold.woff2") format("woff2"),
-  url("../fonts/robotobold.woff") format("woff");
+  src: url(../fonts/robotobold.woff2) format("woff2"),
+  url(../fonts/robotobold.woff) format("woff");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/robotomedium.woff2") format("woff2"),
-  url("../fonts/robotomedium.woff") format("woff");
+  src: url(../fonts/robotomedium.woff2) format("woff2"),
+  url(../fonts/robotomedium.woff) format("woff");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto.woff2") format("woff2"),
-  url("../fonts/roboto.woff") format("woff");
+  src: url(../fonts/roboto.woff2) format("woff2"),
+  url(../fonts/roboto.woff) format("woff");
   font-weight: 400;
 }
 
@@ -172,6 +172,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   padding-top: 9px;
 }
 
@@ -380,6 +381,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -504,6 +506,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
 }
 
 .user-block ul {
@@ -515,6 +518,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 300px;
@@ -651,6 +655,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
 }
 
 .wrapper-btn-enter .button {
@@ -741,6 +746,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 300px;
@@ -811,6 +817,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
@@ -825,7 +832,7 @@ input[type="radio"].visually-hidden {
   margin-right: 14px;
 
   background-color: transparent;
-  background-image: url("../img/close-small.svg");
+  background-image: url(../img/close-small.svg);
   background-repeat: no-repeat;
   border: none;
 
@@ -902,6 +909,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   padding-top: 18px;
   padding-bottom: 23px;
 }
@@ -1016,16 +1024,12 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 13px;
 
-  background-image: url("../img/heart.svg");
+  background-image: url(../img/heart.svg);
 }
 
 .main-footer .footer-copyright {
   width: 189px;
   margin-left: auto;
-}
-
-.footer-copyright p {
-  margin: 0;
 }
 
 .footer-copyright img {
@@ -1171,6 +1175,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   margin-bottom: 34px;
 }
 
@@ -1195,14 +1200,14 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
 
   background-color: #6a0618;
-  background-image: url("../img/raspberry-background.png");
+  background-image: url(../img/raspberry-background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .banners .banner-chocolate {
   background-color: #4a2d1f;
-  background-image: url("../img/chocolate-background.png");
+  background-image: url(../img/chocolate-background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1243,6 +1248,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1510,6 +1516,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   margin-bottom: 39px;
 }
 
@@ -1522,7 +1529,7 @@ input[type="radio"].visually-hidden {
   padding-left: 20px;
 
   background-color: #ffffff;
-  background-image: url("../img/strawberry-background.png");
+  background-image: url(../img/strawberry-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -1565,11 +1572,11 @@ input[type="radio"].visually-hidden {
   width: 560px;
   padding-top: 34px;
   padding-right: 20px;
-  padding-bottom: 33px;
+  padding-bottom: 40px;
   padding-left: 26px;
 
   background-color: #f8f7f4;
-  background-image: url("../img/zip-bckground.png");
+  background-image: url(../img/zip-bckground.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -1666,7 +1673,7 @@ input[type="radio"].visually-hidden {
   width: 218px;
   height: 140px;
 
-  background-image: url("../img/pin.png");
+  background-image: url(../img/pin.png);
   background-repeat: no-repeat;
 }
 
@@ -1903,7 +1910,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
 
   background-color: transparent;
-  background-image: url("../img/close.svg");
+  background-image: url(../img/close.svg);
   background-repeat: no-repeat;
   border: none;
 
@@ -1983,6 +1990,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 900px;
@@ -2047,11 +2055,11 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 10px;
 
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url(../img/icon-down-dir.svg);
 }
 
 .sort-select:hover ~ .custom-select-arrow {
-  background-image: url("../img/icon-down-dir-black.svg");
+  background-image: url(../img/icon-down-dir-black.svg);
 }
 
 .filters-form .filter-price {
@@ -2203,21 +2211,21 @@ input[type="radio"].visually-hidden {
   width: 23px;
   height: 23px;
 
-  background-image: url("../img/radio-off.svg");
+  background-image: url(../img/radio-off.svg);
   opacity: 0.8;
 }
 
 .fat:checked + label::before {
-  background-image: url("../img/radio-on.svg");
+  background-image: url(../img/radio-on.svg);
 }
 
 .fat:disabled + label::before {
-  background-image: url("../img/radio-off.svg");
+  background-image: url(../img/radio-off.svg);
   opacity: 0.4;
 }
 
 .fat:checked:disabled + label::before {
-  background-image: url("../img/radio-on.svg");
+  background-image: url(../img/radio-on.svg);
   opacity: 0.4;
 }
 
@@ -2293,22 +2301,22 @@ input[type="radio"].visually-hidden {
   width: 24px;
   height: 20px;
 
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
 }
 
 .fill:checked + label::before {
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url(../img/checkbox-on.svg);
 }
 
 .fill:disabled + label::before {
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url(../img/checkbox-off.svg);
   opacity: 0.4;
 }
 
 .fill:checked:disabled + label::before {
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url(../img/checkbox-on.svg);
   opacity: 0.4;
 }
 
@@ -2377,6 +2385,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2437,7 +2446,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination .pagination-prev {
-  background-image: url("../img/icon-left.svg");
+  background-image: url(../img/icon-left.svg);
   background-position-x: 13px;
   background-position-y: 3px;
 
@@ -2453,7 +2462,7 @@ input[type="radio"].visually-hidden {
 
 .pagination .pagination-next {
   margin-left: 0px;
-  background-image: url("../img/icon-left.svg");
+  background-image: url(../img/icon-left.svg);
   background-position-x: 12px;
   background-position-y: 5px;
 }
