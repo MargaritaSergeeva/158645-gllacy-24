@@ -662,6 +662,8 @@ input[type="radio"].visually-hidden {
   padding-left: 25px;
 
   border-radius: 20px;
+
+  cursor: pointer;
 }
 
 .login-btn span {
@@ -1146,6 +1148,8 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .slider .promo-slide-btn:hover,
@@ -1903,6 +1907,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/close.svg");
   background-repeat: no-repeat;
   border: none;
+
+  cursor: pointer;
 }
 
 /* INNER PAGE */
@@ -2121,6 +2127,8 @@ input[type="radio"].visually-hidden {
   background-color: #849d8f;
   border: 8px solid #ffffff;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .filter-price .range-toggle-min {
@@ -2332,6 +2340,8 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
   border-radius: 20px;
+
+  cursor: pointer;
 }
 
 .filters-form .filter-btn:hover,
@@ -2431,15 +2441,15 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-left.svg");
   background-position-x: 13px;
   background-position-y: 3px;
-  opacity: 0.2;
 
   -webkit-transform: scale(-1);
-
           transform: scale(-1);
 }
 
-.pagination .pagination-prev:focus {
-  outline: auto;
+.pagination .pagination-disabled {
+  opacity: 0.2;
+
+  cursor: auto;
 }
 
 .pagination .pagination-next {
