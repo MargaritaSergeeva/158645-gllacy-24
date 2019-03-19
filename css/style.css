@@ -386,14 +386,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 9px;
 }
 
-.user-navigation .search {
+.user-navigation .search-wrapper {
   position: relative;
+
   width: 100px;
-  height: 40px;
-
   margin-right: 11px;
-
-  outline: none;
 }
 
 .user-navigation .search::after {
@@ -415,17 +412,19 @@ input[type="radio"].visually-hidden {
 .user-navigation .search:focus::after {
   background-color: #f8f7f4;
   background-image: url(../img/loupe-black.svg);
+
+  outline: none;
 }
 
-.search:hover .wrapper-search-form {
+.search-wrapper:hover .wrapper-search-form {
   display: block;
 }
 
-.search:focus-within .wrapper-search-form {
+.search-wrapper:focus-within .wrapper-search-form {
   display: block;
 }
 
-.search .wrapper-search-form {
+.search-wrapper .wrapper-search-form {
   position: absolute;
   top: 36px;
   left: -241px;
