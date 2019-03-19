@@ -35,8 +35,7 @@
         </nav>
         <div class="wrapper-user-extra">
           <nav class="user-navigation">
-            <div class="search-wrapper">
-              <a class="search" href="#"><span class="visually-hidden">Поиск по сайту</span></a>
+            <div class="search" tabindex="0">
               <div class="wrapper-search-form pop-up">
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label for="search"><span class="visually-hidden">Поиск</span></label>
@@ -46,33 +45,31 @@
               </div>
             </div>
             <div class="user-block">
-              <ul class="login-list">
-                <li class="login-list-item">
-                  <a class="login-link" href="login-link.html">Вход</a>
-                  <div class="wrapper-login-form pop-up">
-                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                      <p class="login-form-email">
-                        <label class="visually-hidden" for="email-login">Ваш электронный адрес</label>
-                        <input id="email-login" name="email" type="email" placeholder="Электронная почта">
-                      </p>
-                      <p class="login-form-password">
-                        <label class="visually-hidden" for="password">Ваш пароль</label>
-                        <input id="password" name="password" type="password" placeholder="Пароль">
-                      </p>
-                      <div class="wrapper-btn-enter">
-                        <button class="button login-btn" type="submit"><span>Войти</span></button>
-                        <div class="for-enter">
-                          <a class="forgot-passward" href="#">Забыли пароль?</a>
-                          <a class="new-registration" href="#">Новая регистрация</a>
-                        </div>
+              <div class="login-block">
+                <a class="login-link" href="login-link.html">Вход</a>
+                <div class="wrapper-login-form pop-up">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p class="login-form-email">
+                      <label class="visually-hidden" for="email-login">Ваш электронный адрес</label>
+                      <input id="email-login" name="email" type="email" placeholder="Электронная почта">
+                    </p>
+                    <p class="login-form-password">
+                      <label class="visually-hidden" for="password">Ваш пароль</label>
+                      <input id="password" name="password" type="password" placeholder="Пароль">
+                    </p>
+                    <div class="wrapper-btn-enter">
+                      <button class="button login-btn" type="submit"><span>Войти</span></button>
+                      <div class="for-enter">
+                        <a class="forgot-passward" href="#">Забыли пароль?</a>
+                        <a class="new-registration" href="#">Новая регистрация</a>
                       </div>
-                    </form>
-                  </div>
-                </li>
-              </ul>
-              <ul class="operation-with-goods">
-                <li class="cart-list-item"><a class="cart" href="#"><span class="visually-hidden">Корзина&ensp;</span>Пусто</a></li>
-              </ul>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="cart-block">
+                <a class="cart" href="#"><span class="visually-hidden">Корзина&ensp;</span>Пусто</a>
+              </div>
             </div>
           </nav>
           <div class="extra">
@@ -233,7 +230,7 @@
                 <a class="contact-number" href="tel:+78124502525">8 812 450-25-25</a>
                 (с 10 до 20 ежедневно)
               </p>
-              <a class="button feedback" href="#">Форма обратной связи</a>
+              <a class="button feedback" href="form.html">Форма обратной связи</a>
               <div class="overlay-contact-form pop-up">
                 <form class="modal-contact-form" action="https://echo.htmlacademy.ru" method="post">
                   <p class="contact-form-phrase">Мы обязательно вам ответим!</p>
